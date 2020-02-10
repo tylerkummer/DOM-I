@@ -49,6 +49,21 @@ navBar[3].textContent = "Features";
 navBar[4].textContent = "About";
 navBar[5].textContent = "Contact";
 
+navBar.forEach(element =>{
+  element.style.color = 'green';
+})
+
+const home = document.createElement('a');
+home.textContent = "Home";
+home.style.color = "green";
+const navBeg = document.querySelector('nav');
+navBeg.prepend(home);
+
+const support = document.createElement('a');
+support.textContent = "Support";
+support.style.color = "green";
+navBeg.appendChild(support);
+
 const header1 = document.querySelector('h1');
 header1.innerHTML = `Dom<br/>Is<br/>Awesome`
 
